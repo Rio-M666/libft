@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 12:35:32 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 18:11:22 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/29 03:35:41 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	unsigned char a;
 	size_t i;
 	i = 0;
 	while (str[i] != '\0')
@@ -25,5 +24,7 @@ char	*ft_strchr(const char *str, int c)
 		}
 		i++;
 	}
+	if(c='\0')
+		return((char *)str);
 	return (NULL);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:45:54 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 18:08:12 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/29 02:18:06 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	if (sl >= size)
 		return (size + sl);
 	max = size - dl - 1;
-	i = 0;
 	while (i < max)
 	{
 		if (src[i] == '\0')
