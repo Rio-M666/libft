@@ -6,11 +6,11 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 12:00:26 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/25 12:32:30 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/28 16:55:00 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {
@@ -33,6 +33,6 @@ size_t	ft_strlen(const char *str)
 // 	return (0);
 // }
 // %zuとはsize_t型の符号なし整数を入出力するためのフォーマット
-//z: size_t 型であることを示します。
+// z: size_t 型であることを示します。
 
-//u;符号なしunsigned integer）であることを示します。
+// u;符号なしunsigned integer）であることを示します。

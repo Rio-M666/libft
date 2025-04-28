@@ -6,13 +6,13 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:45:54 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 14:05:10 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/28 17:11:18 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t	strlcat(char *dest, const char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	unsigned int	dl;
 	unsigned int	sl;

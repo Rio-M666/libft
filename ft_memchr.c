@@ -6,12 +6,12 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 15:24:48 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 15:25:47 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/28 17:11:06 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<string.h>
-void *memchr(const void *s, int c, size_t n)
+#include <string.h>
+
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    
 }
