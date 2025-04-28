@@ -6,11 +6,11 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 13:33:45 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/26 02:11:00 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/28 18:07:26 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

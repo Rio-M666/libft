@@ -6,11 +6,11 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 02:33:20 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/26 02:46:49 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/28 18:08:21 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 int	strncmp(const char *s1, const char *s2, size_t n)
 {
