@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:46:29 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/29 17:13:59 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/29 19:30:57 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,6 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_isalnum(int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char *ft_strnstr(const char *big, const char *little, size_t len);
+int	ft_atoi(const char *nptr);
+
 #endif
