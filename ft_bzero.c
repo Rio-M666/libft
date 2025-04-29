@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 13:33:45 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/29 02:17:19 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/04/29 19:05:36 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
 
-	ptr = (char *)s;
+	ptr = (unsigned char *)s;
 	while (n > 0)
 	{
 		*ptr = 0;
@@ -24,4 +24,3 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-
