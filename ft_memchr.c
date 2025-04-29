@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 15:24:48 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 18:43:36 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/29 17:31:36 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,11 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	unsigned char *i;
-	unsigned char j;
+	unsigned char	*i;
+	unsigned char	j;
 
 	i = (unsigned char *)s;
 	j = (unsigned char)c;
-
 	while (n--)
 	{
 		if (*i == j)

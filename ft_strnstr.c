@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/25 12:35:32 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/29 17:11:02 by mrio             ###   ########.fr       */
+/*   Created: 2025/04/29 17:12:36 by mrio              #+#    #+#             */
+/*   Updated: 2025/04/29 17:30:07 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strchr(const char *str, int c)
+#include"libft.h"
+char *ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] == c)
-		{
-			return ((char *)(str + i));
-		}
-		i++;
-	}
-	if (c == '\0')
-		return ((char *)str);
-	return (NULL);
+    
+    if(*little=='\0')
+        return ((char *)big);
+     
+    
+
+    return NULL;
 }
