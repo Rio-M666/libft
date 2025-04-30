@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:46:29 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/29 21:36:27 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/30 15:07:36 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
-char *strdup(const char *s);
+char	*ft_strdup(const char *s);
 
 #endif
