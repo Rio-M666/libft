@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:46:29 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/30 15:07:36 by mrio             ###   ########.fr       */
+/*   Updated: 2025/04/30 15:28:45 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include <unistd.h>
 int		ft_toupper(int i);
 int		ft_isalpha(char c);
 int		ft_tolower(int i);
@@ -41,5 +42,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strdup(const char *s);
-
+void	ft_putchar_fd(char c, int fd);
+void	ft_putedndl_fd(char *s, int fd);
+void	ft_putstr_fd(char *s, int fd);
 #endif
