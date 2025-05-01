@@ -1,32 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/30 15:43:50 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/01 11:53:34 by mrio             ###   ########.fr       */
+/*   Created: 2025/05/01 11:54:12 by mrio              #+#    #+#             */
+/*   Updated: 2025/05/01 12:37:42 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-		char *s;
+	size_t	i;
+	size_t	j;
+	char	*str;
 
-	if (n == _SC_INT_MIN)
+	if (!s)
+		return (NULL);
+	str = (char *)malloc(sizeof(*s) * (len + 1));
+	i=0;
+	j=0;
 	{
-		s = "-2147483648";
-		ft_atoi(s);
-		while (*s)
+		if (i >= start && j < len)
 		{
-			write(1, &s, 1);
-			s++;
+			str[j] = s[i];
+			j++;
 		}
+		i++;
 	}
-	if (n >= 10)
-		ft_putnbr_fd(n / 10, fd);
-	ft_putchar_fd((n % 10) + '0', fd);
+	str[j] = 0;
+	return (str);
 }
