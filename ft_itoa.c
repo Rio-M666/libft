@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/25 12:35:32 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/01 14:28:22 by mrio             ###   ########.fr       */
+/*   Created: 2025/05/01 15:09:00 by mrio              #+#    #+#             */
+/*   Updated: 2025/05/01 15:44:49 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strchr(const char *str, int c)
+#include"libft.h"
+char *ft_itoa(int n)
 {
-	size_t			i;
-	unsigned char	ch;
+    char *str;
+    
+}
 
-	i = 0;
-	ch = (unsigned char)c;
-	while (str[i] != '\0')
-	{
-		if ((unsigned char)str[i] == ch)
-		{
-			return ((char *)(str + i));
-		}
-		i++;
-	}
-	if (c == '\0')
-		return ((char *)(str + i));
-	return (NULL);
+int main(void)
+{
+    printf("%s",ft_itoa(7348934));
+    return 0;
 }

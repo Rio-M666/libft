@@ -1,33 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/25 12:35:32 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/01 14:28:22 by mrio             ###   ########.fr       */
+/*   Created: 2025/05/01 16:14:03 by mrio              #+#    #+#             */
+/*   Updated: 2025/05/01 16:34:25 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strchr(const char *str, int c)
+#include"libft.h"
+char **ft_split(char const *s,char c)
 {
-	size_t			i;
-	unsigned char	ch;
-
-	i = 0;
-	ch = (unsigned char)c;
-	while (str[i] != '\0')
-	{
-		if ((unsigned char)str[i] == ch)
-		{
-			return ((char *)(str + i));
-		}
-		i++;
-	}
-	if (c == '\0')
-		return ((char *)(str + i));
-	return (NULL);
+    size_t i;
+    if(!s)
+        return NULL;
+    
 }
