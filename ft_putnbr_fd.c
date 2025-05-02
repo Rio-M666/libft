@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 15:43:50 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/01 11:53:34 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/03 01:10:21 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putnbr_fd(int n, int fd)
 {
 		char *s;
 
-	if (n == _SC_INT_MIN)
+	if (n == -2147483648)
 	{
 		s = "-2147483648";
 		ft_atoi(s);
