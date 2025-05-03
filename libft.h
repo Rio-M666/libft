@@ -6,7 +6,7 @@
 /*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:46:29 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/03 12:12:17 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/03 13:31:01 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+#include <limits.h> 
 int		ft_toupper(int i);
 int		ft_isalpha(char c);
 int		ft_tolower(int i);

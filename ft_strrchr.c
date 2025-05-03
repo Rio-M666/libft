@@ -6,7 +6,7 @@
 /*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 16:49:38 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/03 01:24:44 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/03 12:30:47 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	*ft_strrchr(const char *str, int c)
 		i++;
 	}
 	if (ch == '\0')
-		return ((char *)&s[i]);
+		return ((char *)&str[i]);
 	return ((char *)s);
 }
