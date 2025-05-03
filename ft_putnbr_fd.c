@@ -6,7 +6,7 @@
 /*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 15:43:50 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/03 12:19:36 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/04 01:50:59 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-		char *s;
+	char	*s;
 
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
-		return;
+		return ;
 	}
 	if (n < 0)
 	{

@@ -6,31 +6,32 @@
 /*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 15:09:00 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/03 12:09:54 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/04 01:47:56 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"libft.h"
+#include "libft.h"
 
-static size_t ft_count(int num)
+static size_t	ft_count(int num)
 {
-    int i;
-    size_t j;
-    
-    i=num;
-    j=1;
-    if(i<0)
-    {
-        i*=-1;
-        j++;
-    }
-    while(10<=i)
-    {
-        i=i/10;
-        j++;
-    }
-    return j;
+	int		i;
+	size_t	j;
+
+	i = num;
+	j = 1;
+	if (i < 0)
+	{
+		i *= -1;
+		j++;
+	}
+	while (10 <= i)
+	{
+		i = i / 10;
+		j++;
+	}
+	return (j);
 }
+
 static char	*ft_return_intmin(void)
 {
 	char	*res;
@@ -42,15 +43,16 @@ static char	*ft_return_intmin(void)
 	return (res);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    size_t size;
-    char *str;
-    if(n==-2147483648)
-        return (ft_return_intmin());
-    size=ft_count(n)-1;
-    str=(char *)ft_calloc(size+2,sizeof(char));
-    if (n < 0)
+	size_t	size;
+	char	*str;
+
+	if (n == -2147483648)
+		return (ft_return_intmin());
+	size = ft_count(n) - 1;
+	str = (char *)ft_calloc(size + 2, sizeof(char));
+	if (n < 0)
 	{
 		n = -n;
 		str[0] = '-';
@@ -62,12 +64,10 @@ char *ft_itoa(int n)
 	}
 	str[size] = 48 + n;
 	return (str);
-    
-    
 }
 
 // int main(void)
 // {
 //     printf("%s",ft_itoa(7348934));
-//     return 0;
+//     return (0);
 // }

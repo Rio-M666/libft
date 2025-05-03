@@ -6,7 +6,7 @@
 /*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 16:49:38 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/03 12:30:47 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/04 01:53:23 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	const char *s;
-	size_t i;
-	char ch;
+	const char	*s;
+	size_t		i;
+	char		ch;
 
 	s = NULL;
-	ch=(char)c;
+	ch = (char)c;
 	i = 0;
 	while (str[i])
 	{

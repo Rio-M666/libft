@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 15:34:16 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 18:08:01 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/04 01:50:03 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;
@@ -34,16 +35,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else
 	{
 		while (n--)
-		{
-			*d = *s;
-			d++;
-			s++;
-		}
+			*d++ = *s++;
 	}
 	return (dest);
 }
-
-#include <stdio.h>
 
 // int	main(void)
 // {

@@ -6,7 +6,7 @@
 /*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:48:45 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/03 23:37:28 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/04 01:51:30 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,8 @@ char	**ft_split(char const *s, char c)
 	{
 		while (*s == c && *s)
 			s++;
-		if(!*s)
-			break;
-		
+		if (!*s)
+			break ;
 		if (!ft_strchr(s, c))
 			len = ft_strlen(s);
 		else
@@ -65,7 +64,7 @@ char	**ft_split(char const *s, char c)
 		str[i] = ft_substr(s, 0, len);
 		if (!str[i++])
 		{
-			ft_free(str, i-1);
+			ft_free(str, i - 1);
 			return (NULL);
 		}
 		s += len;
