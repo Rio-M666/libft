@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 15:22:04 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/30 15:43:29 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/03 12:15:25 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
-void	ft_putedndl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
     if(s==NULL)
         return;

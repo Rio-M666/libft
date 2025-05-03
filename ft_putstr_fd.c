@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/30 15:16:50 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/30 15:38:35 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/03 12:14:36 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ft_putstr_fd(char *s, int fd)
 		return ;
 	while (*s)
 	{
-		write(fd, &s, 1);
+		write(fd, s, 1);
 		s++;
 	}
 }
