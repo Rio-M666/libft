@@ -6,18 +6,19 @@
 /*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:46:29 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/03 13:31:01 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/04 02:15:54 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <limits.h>
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-#include <limits.h> 
+
 int		ft_toupper(int i);
 int		ft_isalpha(char c);
 int		ft_tolower(int i);
@@ -53,6 +54,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-char **ft_split(char const *s,char c);
+char	**ft_split(char const *s, char c);
 
 #endif

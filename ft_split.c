@@ -6,7 +6,7 @@
 /*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:48:45 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/04 01:51:30 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/04 21:56:13 by miyachirio       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,12 @@ void	ft_free(char **str, int count)
 	free(str);
 }
 
-char	**ft_split(char const *s, char c)
+char	**split_sub(char **str, char const *s, char c)
 {
-	char	**str;
 	size_t	len;
 	int		i;
 
-	if (!s)
-		return (NULL);
 	i = 0;
-	str = malloc((word_count(s, c) + 1) * sizeof(char *));
-	if (!str)
-		return (NULL);
 	while (*s)
 	{
 		while (*s == c && *s)
@@ -71,6 +65,21 @@ char	**ft_split(char const *s, char c)
 	}
 	str[i] = NULL;
 	return (str);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	char	**str;
+	size_t	len;
+	int		i;
+
+	if (!s)
+		return (NULL);
+	i = 0;
+	str = malloc((word_count(s, c) + 1) * sizeof(char *));
+	if (!str)
+		return (NULL);
+	return (split_sub(str, s, c));
 }
 
 // int	main(void)
