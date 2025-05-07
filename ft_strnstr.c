@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:12:36 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/04 01:53:03 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/07 20:41:47 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 
 	if (*little == '\0')
 		return ((char *)big);
+	if (!big[0] && big[0] == '\0')
+		return (NULL);
 	l_len = ft_strlen(little);
 	if (l_len > len)
 		return (NULL);
@@ -35,3 +37,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+
+// int	main(void)
+// {
+// 	printf("%s", ft_strnstr((void *)0, "fake", 3));
+// 	return (0);
+// }

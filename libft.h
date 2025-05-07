@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:46:29 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/04 02:15:54 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/07 18:07:02 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # include <unistd.h>
 
 int		ft_toupper(int i);
-int		ft_isalpha(char c);
+int		ft_isalpha(int c);
 int		ft_tolower(int i);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
@@ -28,7 +28,7 @@ size_t	ft_strlen(const char *str);
 void	ft_bzero(void *s, size_t n);
 int		ft_tolower(int i);
 char	*ft_strrchr(const char *str, int c);
-int		strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 void	*ft_memset(void *s, int c, size_t n);

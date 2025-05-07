@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 15:09:00 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/04 01:47:56 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/07 16:37:09 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,8 @@ char	*ft_itoa(int n)
 		return (ft_return_intmin());
 	size = ft_count(n) - 1;
 	str = (char *)ft_calloc(size + 2, sizeof(char));
+	if (!str)
+		return (NULL);
 	if (n < 0)
 	{
 		n = -n;

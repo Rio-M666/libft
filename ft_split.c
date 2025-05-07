@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:48:45 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/04 21:56:13 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/05 16:29:27 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,6 @@ char	**split_sub(char **str, char const *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	char	**str;
-	size_t	len;
 	int		i;
 
 	if (!s)
