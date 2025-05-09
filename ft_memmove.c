@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/28 15:34:16 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/07 16:33:31 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/09 16:43:50 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*d;
 	unsigned char	*s;
 
-	if (dest == NULL && src == NULL || n == 0)
+	if (dest == src || n == 0)
 		return (dest);
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
