@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 15:09:00 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/07 16:37:09 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/15 15:28:36 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,21 @@
 static size_t	ft_count(int num)
 {
 	int		i;
-	size_t	j;
+	size_t	flag;
 
 	i = num;
-	j = 1;
+	flag = 1;
 	if (i < 0)
 	{
 		i *= -1;
-		j++;
+		flag++;
 	}
 	while (10 <= i)
 	{
 		i = i / 10;
-		j++;
+		flag++;
 	}
-	return (j);
+	return (flag);
 }
 
 static char	*ft_return_intmin(void)
@@ -67,9 +67,3 @@ char	*ft_itoa(int n)
 	str[size] = 48 + n;
 	return (str);
 }
-
-// int main(void)
-// {
-//     printf("%s",ft_itoa(7348934));
-//     return (0);
-// }

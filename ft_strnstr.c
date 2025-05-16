@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:12:36 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/07 20:41:47 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/15 15:26:02 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	printf("%s", ft_strnstr((void *)0, "fake", 3));
-// 	return (0);
-// }

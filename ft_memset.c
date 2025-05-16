@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 13:12:13 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/04 01:50:31 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/15 15:31:23 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,15 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*a;
-	unsigned char	b;
+	unsigned char	*str;
+	unsigned char	word;
 
-	a = (unsigned char *)s;
-	b = (unsigned char)c;
+	str = (unsigned char *)s;
+	word = (unsigned char)c;
 	while (n--)
 	{
-		*a = b;
-		a++;
+		*str = word;
+		str++;
 	}
 	return ((void *)s);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	buff1[10] = "abcdefghij";
-
-// 	printf("%s\n", (char *)memset(buff1, 'z', 3));
-// 	printf("%s\n", (char *)ft_memset(buff1, 'z', 3));
-// }
-
-////"%s"はヌル終端された文字列を表示するのに使われるため、(char *)にしないといけない

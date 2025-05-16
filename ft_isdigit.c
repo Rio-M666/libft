@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:22:45 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 18:07:49 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/15 15:25:16 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,15 +18,3 @@ int	ft_isdigit(int c)
 		return (1);
 	return (0);
 }
-
-// #include <ctype.h>
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	int i;
-// 	i = '3';
-// 	printf("%d\n", isdigit(i));
-// 	printf("%d", ft_isdigit(i));
-// 	return (0);
-// }

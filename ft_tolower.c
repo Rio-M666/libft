@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:21:27 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 18:08:27 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/15 15:26:08 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_tolower(int i)
 		i += 32;
 	return (i);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	int i;
-// 	i = 'A';
-// 	printf("%d", ft_tolower(i));
-// }

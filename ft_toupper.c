@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 22:09:15 by mrio              #+#    #+#             */
-/*   Updated: 2025/04/28 18:08:31 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/15 15:26:13 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,3 @@ int	ft_toupper(int i)
 		i -= 32;
 	return (i);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	int i;
-// 	i = 'a';
-// 	printf("%d", ft_toupper(i));
-// }

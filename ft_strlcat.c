@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/25 15:45:54 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/03 01:28:08 by miyachirio       ###   ########.fr       */
+/*   Updated: 2025/05/15 15:33:13 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,28 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	unsigned int	dl;
-	unsigned int	sl;
+	unsigned int	d_len;
+	unsigned int	s_len;
 	unsigned int	i;
 	unsigned int	max;
 
-	dl = 0;
-	while (dest[dl] != '\0')
-		dl++;
-	sl = 0;
-	while (src[sl] != '\0')
-		sl++;
-	if (dl >= size)
-		return (size + sl);
-	max = size - dl - 1;
+	d_len = 0;
+	while (dest[d_len] != '\0')
+		d_len++;
+	s_len = 0;
+	while (src[s_len] != '\0')
+		s_len++;
+	if (d_len >= size)
+		return (size + s_len);
+	max = size - d_len - 1;
 	i = 0;
 	while (i < max)
 	{
 		if (src[i] == '\0')
 			break ;
-		dest[dl + i] = src[i];
+		dest[d_len + i] = src[i];
 		i++;
 	}
-	dest[i + dl] = '\0';
-	return (sl + dl);
+	dest[i + d_len] = '\0';
+	return (s_len + d_len);
 }

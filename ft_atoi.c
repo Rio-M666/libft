@@ -3,43 +3,80 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: miyachirio <miyachirio@student.42.fr>      +#+  +:+       +#+        */
+/*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/29 19:11:35 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/04 01:44:44 by miyachirio       ###   ########.fr       */
+/*   Created: 2025/05/16 15:08:31 by mrio              #+#    #+#             */
+/*   Updated: 2025/05/16 16:23:44 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *nptr)
+static int	ft_isspace(char c)
+{
+	return (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f'
+		|| c == '\r');
+}
+
+static int	ft_check(const char *nptr, int *flag)
 {
 	int	i;
-	int	j;
-	int	w;
 
 	i = 0;
-	j = 1;
-	while (nptr[i] == ' ' || nptr[i] == '\t' || nptr[i] == '\n'
-		|| nptr[i] == '\v' || nptr[i] == '\f' || nptr[i] == '\r')
+	while (ft_isspace(nptr[i]))
 		i++;
+	*flag = 1;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
-			j = -1;
+			*flag = -1;
 		i++;
 	}
-	w = 0;
+	return (i);
+}
+
+static int	ft_check_over(int flag, long word, int digit)
+{
+	if (flag == 1)
+	{
+		if (word > (LONG_MAX - digit) / 10)
+			return (-1);
+	}
+	else
+	{
+		if (word < (LONG_MIN + digit) / 10)
+			return (0);
+	}
+	return (2);
+}
+
+int	ft_atoi(const char *nptr)
+{
+	int		i;
+	int		flag;
+	long	word;
+	int		digit;
+	int		chk_o;
+
+	i = ft_check(nptr, &flag);
+	word = 0;
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		w = (w * 10) + (nptr[i++] - '0');
+		digit = nptr[i++] - '0';
+		chk_o = ft_check_over(flag, word, digit);
+		if (chk_o != 2)
+			return (chk_o);
+		word = (word * 10) + digit;
 	}
-	return (w * j);
+	return ((int)(word * flag));
 }
+
+// #include <stdio.h>
+// #include <stdlib.h>
 
 // int	main(void)
 // {
-// 	char *s = "wjdio";
-// 	printf("%d", atoi(s));
+// 	printf("%d\n", atoi("-109"));
+// 	printf("%d\n", ft_atoi("-109"));
 // 	return (0);
 // }

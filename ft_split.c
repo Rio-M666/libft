@@ -6,7 +6,7 @@
 /*   By: mrio <mrio@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/02 16:48:45 by mrio              #+#    #+#             */
-/*   Updated: 2025/05/05 16:29:27 by mrio             ###   ########.fr       */
+/*   Updated: 2025/05/15 15:25:48 by mrio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,9 +80,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (split_sub(str, s, c));
 }
-
-// int	main(void)
-// {
-// 	printf("%d", word_count("I   am a man", ' '));
-// 	return (0);
-// }
